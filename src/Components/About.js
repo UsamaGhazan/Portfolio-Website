@@ -42,6 +42,8 @@ export const About = forwardRef((props, ref) => {
             <a
               href='https://drive.google.com/file/d/1-WWNGxMigE4D1O26-Fh_uy1pN-gjnDvz/view?usp=sharing'
               className='aboutresume'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               My Resume
             </a>
