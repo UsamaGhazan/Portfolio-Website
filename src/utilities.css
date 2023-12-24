@@ -1,18 +1,16 @@
-.max-width{
-    padding: 0 80px;
-    max-width: 1300px;
-    margin: auto;
-  
-  }
-  
-  .flex{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .about{
-    font-family:'poppins';
-  }
-  
+.max-width {
+  padding: 0 80px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about {
+  font-family: 'poppins';
+}

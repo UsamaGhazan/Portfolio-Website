@@ -19,7 +19,7 @@ export const Home = forwardRef((props, ref) => {
                     strings: [
                       'Full Stack Developer',
                       'Freelancer',
-                      'UI/UX Designer',
+                      'Copywriter',
                     ],
                     autoStart: true,
                     loop: true,
@@ -34,17 +34,22 @@ export const Home = forwardRef((props, ref) => {
             <i>
               <FaGithub />
             </i>
-            <a href='https://github.com/UsamaGhazan' target={'_blank'}>
+            <a
+              href='https://github.com/UsamaGhazan'
+              target={'_blank'}
+              rel='noreferrer'
+            >
               View on Github
             </a>
           </div>
-          <div className='btn'>
+          <div className='btn linkedin'>
             <i>
               <FaLinkedin />
             </i>
             <a
               href='https://www.linkedin.com/in/usama-bin-ghazan-8436791a0/'
               target={'_blank'}
+              rel='noreferrer'
             >
               View on LinkedIn
             </a>

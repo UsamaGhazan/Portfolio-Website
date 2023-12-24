@@ -1,8 +1,8 @@
-import React from "react";
-import { navItems } from "../data";
-import { FaBars, FaTimes, FaAngleUp } from "react-icons/fa";
-import { useState, useEffect, useContext } from "react";
-import { AppContext } from "./context";
+import React from 'react';
+import { navItems } from '../data';
+import { FaBars, FaTimes, FaAngleUp } from 'react-icons/fa';
+import { useState, useEffect, useContext } from 'react';
+import { AppContext } from './context';
 
 export const NavBar = ({
   homeSection,
@@ -32,15 +32,15 @@ export const NavBar = ({
   const goToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -48,23 +48,24 @@ export const NavBar = ({
     <>
       <div
         className={
-          scrollPosition > 500 ? "scroll-up-btn show" : "scroll-up-btn"
+          scrollPosition > 500 ? 'scroll-up-btn show' : 'scroll-up-btn'
         }
       >
         <i>
           <FaAngleUp onClick={goToTop} />
         </i>
       </div>
-      <nav className={scrollPosition > 20 ? "navbar sticky" : "navbar "}>
-        <div className="max-width ">
-          <div className="flex">
-            <h1 className="logo">
+      <nav className={scrollPosition > 20 ? 'navbar sticky' : 'navbar '}>
+        <div className='max-width '>
+          <div className='flex'>
+            <h1 className='hidh1'></h1>
+            <h1 className='logo'>
               Portfo
-              <span className={scrollPosition > 20 ? "span-white" : "span"}>
+              <span className={scrollPosition > 20 ? 'span-white' : 'span'}>
                 lio.
               </span>
             </h1>
-            <ul className={isactive ? "menu active" : "menu"}>
+            <ul className={isactive ? 'menu active' : 'menu'}>
               {navItems.map((item) => {
                 const { id, url, text } = item;
                 const scrollDownFunc = (
@@ -79,26 +80,21 @@ export const NavBar = ({
                     if (id === 0) {
                       scrollDown(homeSection);
                       break;
-                    }else if(id===1){
-                      scrollDown(aboutSection)
+                    } else if (id === 1) {
+                      scrollDown(aboutSection);
                       break;
-
-                    }else if(id===2){
-                      scrollDown(servicesSection)
+                    } else if (id === 2) {
+                      scrollDown(servicesSection);
                       break;
-
-                    }else if(id===3){
-                      scrollDown(skillsSection)
+                    } else if (id === 3) {
+                      scrollDown(skillsSection);
                       break;
-
-                    }else if(id===4){
-                      scrollDown(projectSection)
+                    } else if (id === 4) {
+                      scrollDown(projectSection);
                       break;
-
-                    }else if(id===5){
-                      scrollDown(contactSection)
+                    } else if (id === 5) {
+                      scrollDown(contactSection);
                       break;
-
                     }
                   }
                 };
@@ -122,7 +118,7 @@ export const NavBar = ({
                 );
               })}
             </ul>
-            <div className="menu-btn">
+            <div className='menu-btn'>
               {isactive ? (
                 <FaTimes onClick={closeSideBar} />
               ) : (

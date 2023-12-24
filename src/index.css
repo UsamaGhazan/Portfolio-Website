@@ -37,7 +37,7 @@ img {
   z-index: 999;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
-  padding: 30px 0;
+  padding: 25px 0;
 }
 .navbar.sticky {
   padding: 15px 0;
@@ -182,6 +182,7 @@ h1 .logo {
 
 .about {
   padding: 100px 0;
+  width: 100vw;
 }
 
 .about .title {
@@ -217,11 +218,17 @@ h1 .logo {
 }
 .about .about-content {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
 }
 
 .about .about-content .left {
-  width: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .about .about-content img {
@@ -233,7 +240,7 @@ h1 .logo {
 }
 
 .about .about-content .description {
-  width: 55%;
+  width: 100%;
 }
 .about .about-content .text {
   font-size: 25px;
@@ -254,7 +261,6 @@ h1 .logo {
 }
 
 .about .about-content a {
-  display: inline-block;
   background: var(--primary-color);
   color: #fff;
   font-size: 20px;
@@ -306,9 +312,10 @@ h1 .logo {
   left: 50%;
   font-size: 20px;
   color: var(--primary-color);
-  padding: 0 5px;
+  padding: 0 0px;
   background: var(--secondary-color);
   transform: translateX(-50%);
+  min-width: 150px;
 }
 
 .grid {
@@ -317,7 +324,7 @@ h1 .logo {
 }
 
 .services .serv-content .card {
-  width: calc(33% - 20px);
+  width: 300px;
   background: #222;
   text-align: center;
   border-radius: 6px;
@@ -444,13 +451,13 @@ h1 .logo {
 }
 
 .skills .skill-content .right .css::before {
-  width: 80%;
+  width: 90%;
 }
 .skills .skill-content .right .js::before {
-  width: 50%;
+  width: 90%;
 }
 .skills .skill-content .right .react::before {
-  width: 80%;
+  width: 90%;
 }
 
 /* projects */
@@ -584,6 +591,7 @@ h1 .logo {
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
+  min-width: 120px;
 }
 .contact .contact-content.flexbox {
   display: flex;
@@ -766,7 +774,6 @@ footer span a:hover {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--primary-color);
-    right: 18px;
   }
   .about .about-content .description {
     padding: 20px;
@@ -783,7 +790,125 @@ footer span a:hover {
     width: 245px;
   }
   .about .about-content a {
-    position: absolute;
-    right: 120px;
+  }
+}
+
+@media (max-width: 381px) {
+  .home > .max-width {
+    margin-top: 100px;
+  }
+}
+
+.about > .max-width {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 0px;
+}
+.about > .max-width > .about-content {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.about > .max-width > .about-content > .left > img {
+  margin: 0 auto;
+}
+.about > .max-width > .about-content > .left {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.about > .max-width > .about-content > .description {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 25px auto;
+}
+.about > .max-width > .about-content > .description > p {
+  margin: 15px auto;
+}
+.about > .max-width > .about-content > .description > div {
+  margin: 20px auto;
+}
+.about > .max-width > .about-content > .description > a {
+  position: static !important;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 769px) {
+  .about {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .about > .max-width {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .about > .max-width > .about-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    width: 95% !important;
+    max-width: 95% !important;
+    margin: 0 auto !important;
+  }
+  .about > .max-width {
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+  .about > .max-width > .about-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 635px) {
+  .description {
+    margin: 0 0 !important;
+  }
+  .description p {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+.card {
+  margin: 10px !important;
+  height: 40% !important;
+  min-width: 250px;
+}
+.linkedin {
+  min-width: 230px !important;
+  text-align: center;
+}
+.skillresume {
+  text-align: center;
+  min-width: 140px !important;
+}
+.aboutresume {
+  min-width: 180px !important;
+  text-align: center;
+}
+@media (min-width: 920px) {
+  .about-content {
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 990px) {
+  .about-content .left img {
+    width: 350px !important;
+    height: 350px !important;
   }
 }

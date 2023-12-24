@@ -17,7 +17,7 @@ export const About = forwardRef((props, ref) => {
               <span>
                 <Typewriter
                   options={{
-                    strings: ['Developer', 'Freelancer', 'UI/UX Designer'],
+                    strings: ['Developer', 'Freelancer', 'Copywriter'],
                     autoStart: true,
                     loop: true,
                     delay: 100,
@@ -27,8 +27,8 @@ export const About = forwardRef((props, ref) => {
               </span>{' '}
             </div>
             <p>
-              I am an enthusiastic and passionate Software Engineer who is
-              studying in final year at{' '}
+              I am an enthusiastic and passionate Software Engineer who just
+              graduated from the premier IT university{' '}
               <span>COMSATS University Islamabad</span> in Software Engineering
               Majors. Although I can code in other fields like Machine Learning
               Models and App Development, my main specialization is doing Web
@@ -39,7 +39,12 @@ export const About = forwardRef((props, ref) => {
               experience. I am keen to learn new technologies and adopt to
               changing environments.
             </p>
-            <a href='/'>My Resume</a>
+            <a
+              href='https://drive.google.com/file/d/1-WWNGxMigE4D1O26-Fh_uy1pN-gjnDvz/view?usp=sharing'
+              className='aboutresume'
+            >
+              My Resume
+            </a>
           </div>
         </div>
       </div>
