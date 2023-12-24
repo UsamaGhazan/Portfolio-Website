@@ -33,10 +33,7 @@ export const Services = forwardRef((props, ref) => {
               <FaChartLine />
             </i>
             <div className='text'>Landing Pages</div>
-            <p>
-              I can design and develop landing pages that give high conversion
-              rates
-            </p>
+            <p>I can develop landing pages that give high conversion rates</p>
           </div>
         </div>
       </div>
