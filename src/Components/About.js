@@ -40,7 +40,7 @@ export const About = forwardRef((props, ref) => {
               changing environments.
             </p>
             <a
-              href='https://drive.google.com/file/d/1-WWNGxMigE4D1O26-Fh_uy1pN-gjnDvz/view?usp=sharing'
+              href='https://drive.google.com/file/d/1DRwCuI2SLlD0p77g9juxLF3GWZd37_Gs/view?usp=sharing'
               className='aboutresume'
               target='_blank'
               rel='noopener noreferrer'
