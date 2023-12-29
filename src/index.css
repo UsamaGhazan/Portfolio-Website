@@ -414,8 +414,6 @@ h1 .logo {
 }
 .skills .skill-content a:hover {
   cursor: pointer;
-  background-color: none;
-  color: var(--primary-color);
 }
 .skills .skill-content .right .bars {
   margin-bottom: 15px;

@@ -49,7 +49,10 @@ export const Skills = forwardRef((props, ref) => {
                 use Nodejs and ExpressJs. I use MongoDb Database which is quite
                 efficient.
               </p>
-              <a className='skillresume' href='/'>
+              <a
+                className='skillresume'
+                href='https://drive.google.com/file/d/1DRwCuI2SLlD0p77g9juxLF3GWZd37_Gs/view?usp=sharing'
+              >
                 My Resume
               </a>
             </div>
