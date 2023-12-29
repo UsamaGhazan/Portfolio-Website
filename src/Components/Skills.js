@@ -52,6 +52,8 @@ export const Skills = forwardRef((props, ref) => {
               <a
                 className='skillresume'
                 href='https://drive.google.com/file/d/1DRwCuI2SLlD0p77g9juxLF3GWZd37_Gs/view?usp=sharing'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 My Resume
               </a>
